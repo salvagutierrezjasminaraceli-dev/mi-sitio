@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1. Pestaña del navegador: Título e icono personalizado -->
+    <title>Sitio Web Personal | Mi Portafolio</title>
+    <link rel="icon" href="f:\imagennnn.jfif">
+    <link rel="stylesheet" href="estilosalva.css">
+</head>
+<body>
+
+    <!-- 2. Encabezado de la página -->
+    <header class="main-header">
+        <div class="header-brand">
+            <img src="f:\imagennnn.jfif">
+            <div class="header-titles">
+                <h1>Mi Sitio Web Personal</h1>
+                <p>¡Bienvenido a mi espacio digital!</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. Menú de navegación -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="salva.html" target="contenido_frame" class="nav-link">Inicio / Sobre mí</a>
+            </li>
+            <li class="nav-item">
+                <a href="hoobies.html" target="contenido_frame" class="nav-link">Mis hobbies</a>
+            </li>
+            <li class="nav-item">
+                <a href="ciudad.html" target="contenido_frame" class="nav-link">Mi ciudad</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor con Iframe donde se mostrarán las secciones -->
+    <main class="content-container">
+        <!-- 4. Se carga sobre_mi.html dentro del iframe al iniciar -->
+        <iframe name="contenido_frame" src="sobre_mi.html" title="Contenido de la página" class="main-iframe"></iframe>
+    </main>
+
+    <!-- 9. Pie de página -->
+    <footer class="main-footer">
+        <div class="footer-info">
+            <p><strong>Estudiante:</strong> SALVA GUTIERREZ JASMIN ARACELI</p>
+            <p><strong>Curso:</strong> 1ro C </p>
+            <p><strong>Materia:</strong>DISEÑO WED</p>
+            <p><strong>Año:</strong> 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,232 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5eef8;
+    color: #333;
+}
+
+
+/* ==============================
+   ENCABEZADO
+============================== */
+
+.main-header {
+    background: linear-gradient(
+        135deg,
+        #6a1b9a,
+        #9c27b0,
+        #e91e63
+    );
+
+    padding: 25px;
+
+    color: white;
+}
+
+
+/* Contenido del encabezado */
+
+.header-brand {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+/* Imagen del encabezado */
+
+.header-brand img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid white;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+/* Textos del encabezado */
+
+.header-titles {
+    text-align: center;
+}
+
+.header-titles h1 {
+    font-size: 36px;
+
+    margin-bottom: 8px;
+}
+
+.header-titles p {
+    font-size: 19px;
+}
+
+
+/* ==============================
+   MENÚ DE NAVEGACIÓN
+============================== */
+
+.navbar {
+    background-color: #30143d;
+
+    padding: 15px;
+}
+
+
+/* Lista */
+
+.nav-list {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+
+/* Enlaces */
+
+.nav-link {
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border: 2px solid #d8a8e8;
+
+    border-radius: 25px;
+
+    transition: 0.3s;
+}
+
+
+/* Cuando pasas el mouse */
+
+.nav-link:hover {
+    background-color: #d8a8e8;
+
+    color: #30143d;
+
+    transform: translateY(-3px);
+}
+
+
+/* ==============================
+   CONTENEDOR DEL IFRAME
+============================== */
+
+.content-container {
+    width: 100%;
+
+    padding: 25px;
+}
+
+
+/* IFRAME */
+
+.main-iframe {
+    display: block;
+
+    width: 100%;
+
+    height: 750px;
+
+    border: none;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+/* ==============================
+   PIE DE PÁGINA
+============================== */
+
+.main-footer {
+    background: linear-gradient(
+        135deg,
+        #30143d,
+        #6a1b9a,
+        #e91e63
+    );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 10px;
+}
+
+
+.footer-info p {
+    margin: 6px;
+}
+
+
+/* ==============================
+   CELULAR
+============================== */
+
+@media (max-width: 700px) {
+
+    .header-brand {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .header-titles h1 {
+        font-size: 28px;
+    }
+
+    .header-titles p {
+        font-size: 16px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .nav-link {
+        width: 250px;
+
+        text-align: center;
+    }
+
+    .content-container {
+        padding: 15px;
+    }
+
+    .main-iframe {
+        height: 700px;
+    }
+}
